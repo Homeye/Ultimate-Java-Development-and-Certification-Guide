@@ -30,4 +30,8 @@ public class Person {
     public void printInfo() {
         System.out.println("I am a person and I was born on " + getBirthDate() + ".");
     }
+
+    public void doSomething() {
+
+    }
 }
