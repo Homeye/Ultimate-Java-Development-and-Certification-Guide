@@ -1,6 +1,6 @@
 package section10.quiz;
 
-import section3.quiz.GovermentBuilding;
+import section3.quiz.GovernmentBuilding;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,15 +24,15 @@ public class NumberFilter {
 
         System.out.println(integers);
 
-        ArrayList<GovermentBuilding> buildings = new ArrayList<>();
-        buildings.add(new GovermentBuilding(10, 60, "C.I.A"));
-        buildings.add(new GovermentBuilding(20, 50, "F.B.I."));
-        buildings.add(new GovermentBuilding(30, 40, "NASA"));
-        buildings.add(new GovermentBuilding(40, 30, "C.I.A"));
-        buildings.add(new GovermentBuilding(50, 20, "C.I.A"));
-        buildings.add(new GovermentBuilding(60, 10, "NASA"));
+        ArrayList<GovernmentBuilding> buildings = new ArrayList<>();
+        buildings.add(new GovernmentBuilding(10, 60, "C.I.A"));
+        buildings.add(new GovernmentBuilding(20, 50, "F.B.I."));
+        buildings.add(new GovernmentBuilding(30, 40, "NASA"));
+        buildings.add(new GovernmentBuilding(40, 30, "C.I.A"));
+        buildings.add(new GovernmentBuilding(50, 20, "C.I.A"));
+        buildings.add(new GovernmentBuilding(60, 10, "NASA"));
 
-        Map<String, List<GovermentBuilding>> groupedBuildings = buildings.stream().collect(Collectors.groupingBy((building) -> building.getAgency()));
+        Map<String, List<GovernmentBuilding>> groupedBuildings = buildings.stream().collect(Collectors.groupingBy((building) -> building.getAgency()));
         System.out.println(groupedBuildings);
     }
 }

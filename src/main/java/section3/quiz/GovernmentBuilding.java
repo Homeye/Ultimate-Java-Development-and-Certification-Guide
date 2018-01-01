@@ -1,12 +1,12 @@
 package section3.quiz;
 
-public class GovermentBuilding extends Building {
+public class GovernmentBuilding extends Building {
 
     private String agency;
 
     private boolean isTopSecret;
 
-    public GovermentBuilding(int numberOfPeople, int ageOfBuilding, String agency) {
+    public GovernmentBuilding(int numberOfPeople, int ageOfBuilding, String agency) {
         super(numberOfPeople, ageOfBuilding);
         this.agency = agency;
     }
@@ -29,7 +29,7 @@ public class GovermentBuilding extends Building {
 
     public static void main(String[] args) {
 
-        GovermentBuilding govermentBuilding1 = new GovermentBuilding(66, 33, "DEA");
+        GovernmentBuilding governmentBuilding1 = new GovernmentBuilding(66, 33, "DEA");
     }
 
     @Override
