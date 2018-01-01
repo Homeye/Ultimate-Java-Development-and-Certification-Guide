@@ -31,4 +31,9 @@ public class GovermentBuilding extends Building {
 
         GovermentBuilding govermentBuilding1 = new GovermentBuilding(66, 33, "DEA");
     }
+
+    @Override
+    public String toString() {
+        return agency + ", numberOfPeople " + getNumberOfPeople() + ", ageOfBuilding " + getAgeOfBuilding();
+    }
 }
